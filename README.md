@@ -4,7 +4,7 @@ This repository contains the reference documentation for the [RE3 Framework](htt
 ## Read it online
 https://faelv.github.io/re3-docs
 
-## Build it localy
+## Build it locally
 Clone this repository and then run these commands:
 ```bash
 composer install
