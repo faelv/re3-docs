@@ -27,7 +27,7 @@
     },
     "scripts": {
         "post-install-cmd": "curl -L \"https://phpdoc.org/phpDocumentor.phar\" --output phpDocumentor.phar",
-        "build": "php phpDocumentor.phar --config phpdoc.xml --title=\"RE3 Reference Documentation\"",
+        "build": "php phpDocumentor.phar --config phpdoc.xml --title=\"RE3 Reference Documentation\" --setting=graphs.enabled=true",
         "start": "php -S localhost:8000 -t docs"
     }
 }
