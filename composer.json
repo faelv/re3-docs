@@ -1,0 +1,33 @@
+{
+    "name": "faelv/re3-docs",
+    "description": "Reference documentation for the RE3 Framework",
+    "homepage": "https://github.com/faelv/re3-docs",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "faelv",
+            "email": "rafael_alt_dev@outlook.com",
+            "homepage": "https://github.com/faelv",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/faelv/re3"
+        }
+    ],
+    "require": {
+
+    },
+    "require-dev": {
+        "php": ">=7.2.5",
+        "faelv/re3": "dev-master"
+    },
+    "scripts": {
+        "post-install-cmd": "curl -L \"https://phpdoc.org/phpDocumentor.phar\" --output phpDocumentor.phar",
+        "build": "php phpDocumentor.phar --config phpdoc.xml --title=\"RE3 Reference Documentation\"",
+        "start": "php -S localhost:8000 -t docs"
+    }
+}
